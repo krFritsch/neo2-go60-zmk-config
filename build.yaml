@@ -1,0 +1,2 @@
+# This file generates the GitHub Actions matrix
+board: [ "go60_lh", "go60_rh" ]
