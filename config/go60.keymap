@@ -567,18 +567,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_Base {
+        LAYER_Base {
             bindings = <
-            &none           &none           &none           &none       &none       &magic layer_Magic 0                                                    &none       &none           &none       &none       &none  &none
+            &none           &none           &none           &none       &none       &magic LAYER_Magic 0                                                    &none       &none           &none       &none       &none  &none
             &mt LCTRL TAB   &kp X           &kp V           &kp L       &kp C       &kp W                                                                   &kp K       &kp H           &kp G       &kp F       &kp Q  &mt RCTRL DE_SS
             &none           &kp U           &kp I           &kp A       &kp E       &kp O                                                                   &kp S       &kp N           &kp R       &kp T       &kp D  &kp DE_Y
             &kp LSHFT       &kp DE_UDIA     &kp DE_ODIA     &kp DE_ADIA &kp P       &kp DE_Z                                                                &kp B       &kp M           &kp COMMA   &kp DOT     &kp J  &kp RSHFT
-                                            &kp LG(LS(T))   &kp LGUI    &kp LALT    &mo layer_NAV  &mo layer_WNDWMGMT  &none /*|*/  &none  &mo layer_SYM    &kp SPACE   &kp LC(BSPC)    &kp RGUI    &kp K_APP
+                                            &kp LG(LS(T))   &kp LGUI    &kp LALT    &mo LAYER_NAV  &mo LAYER_WNDWMGMT  &none /*|*/  &none  &mo LAYER_SYM    &kp SPACE   &kp LC(BSPC)    &kp RGUI    &kp K_APP
         
             >;
         };
 
-        layer_SYM {
+        LAYER_SYM {
             bindings = <
             &trans              &trans          &trans          &trans              &trans          &trans                                                          &trans          &trans          &trans              &trans          &trans          &trans
             &kp DE_DEG          &kp RA(E)       &kp LS(FSLH)    &kp RA(N8)          &kp RA(N9)      &kp GRAVE                                                       &kp LS(N1)      &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp LS(N0)      &kp LS(N6)      &uc DE_DIA DE_DIA
@@ -589,18 +589,18 @@
             >;
         };
 
-        layer_NAV {
+        LAYER_NAV {
             bindings = <
             &trans  &trans      &trans      &trans          &trans          &trans                                              &trans      &trans      &trans      &trans      &trans          &trans
             &trans  &kp PG_UP   &kp BSPC    &kp UP          &kp DEL         &kp PG_DN                                           &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS     &trans
             &trans  &kp HOME    &kp LEFT    &kp DOWN        &kp RIGHT       &kp END                                             &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp COMMA       &kp DOT
             &trans  &kp ESC     &kp TAB     &kp INS         &kp RET         &kp LC(Y)                                           &kp LS(DOT) &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp LS(COMMA)   &trans
-                                &trans      &mo layer_SUB   &mo layer_SUP   &trans      &trans  &trans /*|*/  &trans  &trans    &kp KP_N0   &trans      &trans      &trans
+                                &trans      &mo LAYER_SUB   &mo LAYER_SUP   &trans      &trans  &trans /*|*/  &trans  &trans    &kp KP_N0   &trans      &trans      &trans
         
             >;
         };
 
-        layer_WNDWMGMT {
+        LAYER_WNDWMGMT {
             bindings = <
             &trans      &trans              &trans              &trans              &trans              &trans                                              &trans          &trans  &trans  &trans  &trans  &trans
             &kp LA(F4)  &win1               &win2               &win3               &win4               &win5                                               &kp LG(LS(F15)) &kp F9  &kp F10 &kp F11 &kp F12 &trans
@@ -611,7 +611,7 @@
             >;
         };
 
-        layer_GREEK {
+        LAYER_GREEK {
             bindings = <
             &none       &none           &none               &none               &none               &none                                                   &none               &none               &none               &none               &none               &none
             &none       &uc GK_xi GK_XI &none               &uc GK_lam GK_LAM   &uc GK_chi GK_CHI   &uc GK_ome GK_OME                                       &uc GK_kap GK_KAP   &uc GK_psi GK_PSI   &uc GK_gam GK_GAM   &uc GK_phi GK_PHI   &uc GK_vph 0        &uc GK_fsi 0
@@ -622,7 +622,7 @@
             >;
         };
 
-        layer_SUP {
+        LAYER_SUP {
             bindings = <
             &none   &none   &none  &none  &none  &none                                  &none       &none           &none           &none           &none  &none
             &none   &none   &none  &none  &none  &none                                  &none       &uc SUP_7 0     &uc SUP_8 0     &uc SUP_9 0     &none  &none
@@ -633,7 +633,7 @@
             >;
         };
 
-        layer_SUB {
+        LAYER_SUB {
             bindings = <
             &none  &none    &none  &none  &none  &none                                      &none       &none       &none       &none       &none  &none
             &none  &none    &none  &none  &none  &none                                      &none       &uc SUB_7 0 &uc SUB_8 0 &uc SUB_9 0 &none  &none
@@ -644,7 +644,7 @@
             >;
         };
 
-        layer_FNCYZNS {
+        LAYER_FNCYZNS {
             bindings = <
             &none               &none               &none               &none               &none               &none                                                   &none  &none  &none  &none  &none  &none
             &none               &kp LC(LG(LA(N1)))  &kp LC(LG(LA(N2)))  &kp LC(LG(LA(N3)))  &kp LC(LG(LA(N4)))  &kp LC(LG(LA(N5)))                                      &none  &none  &none  &none  &none  &none
@@ -655,7 +655,7 @@
             >;
         };
 
-        layer_MOUSE {
+        LAYER_MOUSE {
             bindings = <
             &none  &none    &none           &none           &none           &none                                               &none   &none           &none           &none           &none  &none
             &none  &none    &mkp MB4        &mmv MOVE_UP    &mkp MB5        &none                                               &none   &none           &msc SCRL_UP    &none           &none  &none
@@ -666,7 +666,7 @@
             >;
         };
 
-        layer_GAMING {
+        LAYER_GAMING {
             bindings = <
             &none  &kp N1       &kp N2  &kp N3  &kp N4  &kp N5                                      &none  &none  &none  &none  &none  &none
             &none  &kp TAB      &kp Q   &kp W   &kp E   &kp R                                       &none  &none  &none  &none  &none  &none
@@ -677,7 +677,7 @@
             >;
         };
 
-        layer_Magic {
+        LAYER_Magic {
             bindings = <
             &none       &none           &none           &none           &none               &none                                                   &none           &none       &none               &none       &none  &none
             &none       &rgb_ug RGB_SPI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI     &rgb_ug RGB_TOG                                         &kp C_VOL_UP    &none       &none               &none       &none  &none
