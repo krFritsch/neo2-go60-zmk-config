@@ -570,33 +570,33 @@
 
         layer_Base {
             bindings = <
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            &mt LCTRL TAB  &kp X  &kp V  &kp L  &kp C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &mt RCTRL DE_SS
-            &none  &kp U  &kp I  &kp A  &kp E  &kp O  &kp S  &kp N  &kp R  &kp T  &kp D  &kp DE_Y
-            &kp LSHFT  &kp DE_UDIA  &kp DE_ODIA  &kp DE_ADIA  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &kp RSHFT
-            &kp LG(LS(T))  &kp LGUI  &kp LALT  &mo LAYER_NAV  &mo LAYER_WNDWMGMT  &none  &none  &mo LAYER_SYM  &kp SPACE  &kp LC(BSPC)  &kp RGUI  &kp K_APP
+            &none           &none           &none           &none       &none       &none                                                                   &none       &none           &none       &none       &none  &none
+            &mt LCTRL TAB   &kp X           &kp V           &kp L       &kp C       &kp W                                                                   &kp K       &kp H           &kp G       &kp F       &kp Q  &mt RCTRL DE_SS
+            &none           &kp U           &kp I           &kp A       &kp E       &kp O                                                                   &kp S       &kp N           &kp R       &kp T       &kp D  &kp DE_Y
+            &kp LSHFT       &kp DE_UDIA     &kp DE_ODIA     &kp DE_ADIA &kp P       &kp DE_Z                                                                &kp B       &kp M           &kp COMMA   &kp DOT     &kp J  &kp RSHFT
+                                            &kp LG(LS(T))   &kp LGUI    &kp LALT    &mo LAYER_NAV  &mo LAYER_WNDWMGMT  &none /*|*/  &none  &mo LAYER_SYM    &kp SPACE   &kp LC(BSPC)    &kp RGUI    &kp K_APP
         
             >;
         };
 
         layer_SYM {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &kp DE_DEG  &kp RA(E)  &kp LS(FSLH)  &kp RA(N8)  &kp RA(N9)  &kp GRAVE  &kp LS(N1)  &kp NON_US_BSLH  &kp LS(NON_US_BSLH)  &kp LS(N0)  &kp LS(N6)  &uc DE_DIA DE_DIA
-            &uc DE_PM DE_PM  &kp RA(MINUS)  &kp LS(N7)  &kp RA(N7)  &kp RA(N0)  &kp LS(RBKT)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp FSLH  &kp LS(DOT)  &kp DE_AT
-            &kp LS(N3)  &kp BSLH  &kp LS(N4)  &kp RA(NON_US_BSLH)  &kp RA(RBKT)  &uc DE_BTICK DE_BTICK  &kp RBKT  &kp LS(N5)  &kp LS(N2)  &kp LS(BSLH)  &kp LS(COMMA)  &trans
-            &trans  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            &trans              &trans          &trans          &trans              &trans          &trans                                                          &trans          &trans          &trans              &trans          &trans          &trans
+            &kp DE_DEG          &kp RA(E)       &kp LS(FSLH)    &kp RA(N8)          &kp RA(N9)      &kp GRAVE                                                       &kp LS(N1)      &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp LS(N0)      &kp LS(N6)      &uc DE_DIA DE_DIA
+            &uc DE_PM DE_PM     &kp RA(MINUS)   &kp LS(N7)      &kp RA(N7)          &kp RA(N0)      &kp LS(RBKT)                                                    &kp LS(MINUS)   &kp LS(N8)      &kp LS(N9)          &kp FSLH        &kp LS(DOT)     &kp DE_AT
+            &kp LS(N3)          &kp BSLH        &kp LS(N4)      &kp RA(NON_US_BSLH) &kp RA(RBKT)    &uc DE_BTICK DE_BTICK                                           &kp RBKT        &kp LS(N5)      &kp LS(N2)          &kp LS(BSLH)    &kp LS(COMMA)   &trans
+                                                &trans          &none               &none           &trans                  &trans  &trans /*|*/ &trans  &trans     &trans          &trans          &trans              &trans
         
             >;
         };
 
         layer_NAV {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            &trans  &kp PG_UP  &kp BSPC  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS  &trans
-            &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COMMA  &kp DOT
-            &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &kp LC(Y)  &kp LS(DOT)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(COMMA)  &trans
-            &trans  &mo LAYER_SUB  &mo LAYER_SUP  &trans  &trans  &trans  &trans  &trans  &kp KP_N0  &trans  &trans  &trans
+            &trans  &trans      &trans      &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            &trans  &kp PG_UP   &kp BSPC    &kp UP          &kp DEL         &kp PG_DN  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS  &trans
+            &trans  &kp HOME    &kp LEFT    &kp DOWN        &kp RIGHT       &kp END  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COMMA  &kp DOT
+            &trans  &kp ESC     &kp TAB     &kp INS         &kp RET         &kp LC(Y)  &kp LS(DOT)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(COMMA)  &trans
+                                &trans      &mo LAYER_SUB   &mo LAYER_SUP   &trans  &trans  &trans /*|*/  &trans  &trans  &kp KP_N0  &trans  &trans  &trans
         
             >;
         };
@@ -607,7 +607,7 @@
             &kp LA(F4)  &win1  &win2  &win3  &win4  &win5  &kp LG(LS(F15))  &kp F9  &kp F10  &kp F11  &kp F12  &trans
             &kp LG(TAB)  &win6  &win7  &win8  &win9  &win0  &kp F13  &kp F5  &kp F6  &kp F7  &kp F8  &trans
             &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(PG_DN)  &kp LG(F15)  &kp F1  &kp F2  &kp F3  &kp F4  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans /*|*/ &trans  &trans  &trans  &trans  &trans  &trans
         
             >;
         };
@@ -618,7 +618,7 @@
             &none  &uc GK_xi GK_XI  &none  &uc GK_lam GK_LAM  &uc GK_chi GK_CHI  &uc GK_ome GK_OME  &uc GK_kap GK_KAP  &uc GK_psi GK_PSI  &uc GK_gam GK_GAM  &uc GK_phi GK_PHI  &uc GK_vph 0  &uc GK_fsi 0
             &none  &none  &uc GK_iot GK_IOT  &uc GK_alp GK_ALP  &uc GK_eps GK_EPS  &uc GK_omi GK_OMI  &uc GK_sig GK_SIG  &uc GK_nu GK_NU  &uc GK_rho GK_RHO  &uc GK_tau GK_TAU  &uc GK_del GK_DEL  &uc GK_ups GK_UPS
             &kp LSHFT  &none  &none  &uc GK_eta GK_ETA  &uc GK_pi GK_PI  &uc GK_zet GK_ZET  &uc GK_bet GK_BET  &uc GK_mu GK_MU  &uc GK_vrh 0  &uc GK_the GK_THE  &uc GK_vth GK_VTH  &kp RSHFT
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none /*|*/ &none  &none  &none  &none  &none  &none
         
             >;
         };
@@ -629,7 +629,7 @@
             &none  &none  &none  &none  &none  &none  &none  &uc SUP_7 0  &uc SUP_8 0  &uc SUP_9 0  &none  &none
             &none  &none  &none  &none  &none  &none  &none  &uc SUP_4 0  &uc SUP_5 0  &uc SUP_6 0  &none  &none
             &none  &none  &none  &none  &none  &none  &none  &uc SUP_1 0  &uc SUP_2 0  &uc SUP_3 0  &none  &none
-            &none  &none  &none  &none  &none  &none  &none  &none  &uc SUP_0 0  &none  &none  &none
+            &none  &none  &none  &none  &none  &none /*|*/ &none  &none  &uc SUP_0 0  &none  &none  &none
         
             >;
         };
@@ -640,7 +640,7 @@
             &none  &none  &none  &none  &none  &none  &none  &uc SUB_7 0  &uc SUB_8 0  &uc SUB_9 0  &none  &none
             &none  &none  &none  &none  &none  &none  &none  &uc SUB_4 0  &uc SUB_5 0  &uc SUB_6 0  &none  &none
             &none  &none  &none  &none  &none  &none  &none  &uc SUB_1 0  &uc SUB_2 0  &uc SUB_3 0  &none  &none
-            &none  &none  &none  &none  &none  &none  &none  &none  &uc SUB_0 0  &none  &none  &none
+            &none  &none  &none  &none  &none  &none /*|*/ &none  &none  &uc SUB_0 0  &none  &none  &none
         
             >;
         };
@@ -651,7 +651,7 @@
             &none  &kp LC(LG(LA(N1)))  &kp LC(LG(LA(N2)))  &kp LC(LG(LA(N3)))  &kp LC(LG(LA(N4)))  &kp LC(LG(LA(N5)))  &none  &none  &none  &none  &none  &none
             &none  &kp LC(LG(LA(N6)))  &kp LC(LG(LA(N7)))  &kp LC(LG(LA(N8)))  &kp LC(LG(LA(N9)))  &kp LC(LG(LA(N0)))  &none  &none  &none  &none  &none  &none
             &kp LG(LS(SEMI))  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &none  &none  &none /*|*/ &none  &none  &none  &none  &none  &none
         
             >;
         };
@@ -662,7 +662,7 @@
             &none  &none  &mkp MB4  &mmv MOVE_UP  &mkp MB5  &none  &none  &none  &msc SCRL_UP  &none  &none  &none
             &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none
             &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            &none  &none  &none  &mkp LCLK  &mkp RCLK  &none  &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &mkp LCLK  &mkp RCLK  &none /*|*/ &none  &none  &none  &none  &none  &none
         
             >;
         };
@@ -673,7 +673,7 @@
             &none  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &none  &none  &none  &none  &none  &none
             &none  &kp LSHIFT  &kp A  &kp S  &kp D  &kp E  &none  &none  &none  &none  &none  &none
             &none  &kp LCTL  &kp Z  &kp X  &kp C  &kp V  &none  &none  &none  &none  &none  &none
-            &none  &none  &none  &kp SPACE  &none  &none  &none  &none  &none  &none  &none  &none
+            &none  &none  &none  &kp SPACE  &none  &none /*|*/ &none  &none  &none  &none  &none  &none
         
             >;
         };
@@ -684,7 +684,7 @@
             &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &kp C_VOL_UP  &none  &none  &none  &none  &none
             &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none  &bootloader
             &sys_reset  &none  &none  &none  &none  &game_on  &kp C_MUTE  &none  &none  &none  &none  &sys_reset
-            &none  &none  &kp LS(PAUSE_BREAK)  &bt_0  &bt_1  &out OUT_USB  &none  &none  &none  &none  &none  &none
+            &none  &none  &kp LS(PAUSE_BREAK)  &bt_0  &bt_1  &out OUT_USB /*|*/ &none  &none  &none  &none  &none  &none
         
             >;
         };
