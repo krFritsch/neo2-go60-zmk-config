@@ -604,7 +604,7 @@
             &kp TAB         &kp X           &kp V           &kp L        &kp C           &kp W                                                                            &kp K       &kp H           &kp G        &kp F       &kp Q       &kp DE_SS
             &none           &hml LGUI U     &hml LALT I     &hml LCTRL A &kp E           &kp O                                                                            &kp S       &kp N           &hmr LCTRL R &hmr LALT T &hmr LGUI D &kp DE_Y
             &kp LSHFT       &kp DE_UDIA     &kp DE_ODIA     &kp DE_ADIA  &kp P           &kp DE_Z                                                                         &kp B       &kp M           &kp COMMA    &kp DOT     &kp J       &kp RSHFT
-                                            &kp LG(LS(T))   &none        &none                                                                                                        &kp LC(BSPC)    &none        &kp K_APP
+                                            &kp LG(LS(S))   &none        &none                                                                                                        &kp LC(BSPC)    &none        &kp K_APP
                                                                                          &mo LAYER_NAV  &mo LAYER_WNDWMGMT  &none /*|*/  &mo LAYER_MOUSE  &mo LAYER_SYM   &kp SPACE
             >;
         };
